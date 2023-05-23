@@ -216,7 +216,7 @@ const NavTabs: FunctionComponent = () => {
         }
         return false;
       });
-      
+      refreshMeta();
       setDelegateRows(delegateInfo);
     };
     
@@ -235,30 +235,6 @@ const NavTabs: FunctionComponent = () => {
           textColor="primary"
         >
           <Tab
-            label="Receipts"
-            icon={<SwapHorizSharpIcon fontSize="small" className={classes.icon} />}
-            className={classes.paper}
-            classes={{
-              textColorPrimary: classes.selectedTab
-            }}
-          />
-          <Tab
-            label="Send"
-            icon={<CallMadeSharpIcon fontSize="small" className={classes.icon} />}
-            className={classes.paper} 
-            classes={{
-              textColorPrimary: classes.selectedTab
-            }}
-          />
-          <Tab
-            label="Receive"
-            icon={<CallReceivedSharpIcon fontSize="small" className={classes.icon} />}
-            className={classes.paper}
-            classes={{
-              textColorPrimary: classes.selectedTab
-            }}
-          />
-          <Tab
             label="Stake"
             icon={<TollIcon fontSize="small" className={classes.icon} />} 
             className={classes.paper}
@@ -272,31 +248,7 @@ const NavTabs: FunctionComponent = () => {
       <BurnrDivider />
 
       <Paper className={`${classes.root} ${classes.paper}`} square >
-        <TabPanel value={value} index={0} >
-          <ErrorBoundary>
-            <Typography variant="h6" className={classes.rootHeading}>
-              Transaction History
-            </Typography>
-            <HistoryTable />
-          </ErrorBoundary>
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          <ErrorBoundary>
-            <Typography variant="h6" className={classes.rootHeading}>
-              Send TAO
-            </Typography>
-            <SendFundsForm />
-          </ErrorBoundary>
-        </TabPanel>
-        <TabPanel value={value} index={2}>
-          <ErrorBoundary>
-            <Typography variant="h6" className={classes.rootHeading}>
-              Receive TAO
-            </Typography>
-            <ReceiveFundsForm />
-          </ErrorBoundary>
-        </TabPanel>
-        <TabPanel value={value} index={3}>
+        <TabPanel value={value} index={0}>
           <ErrorBoundary>
             <Stack spacing={2} direction="row">
               <Typography variant="h6" className={classes.rootHeading}>

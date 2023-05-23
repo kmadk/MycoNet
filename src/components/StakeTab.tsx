@@ -124,28 +124,13 @@ export default function StakeTab({ stakeData, loader, refreshMeta, delegateInfo,
       </Stack>
       <Box>
         <ErrorBoundary>
-          {!!Object.keys(stakeData).length && Object.entries(stakeData).map(([netuid, neurons]) => {
-            return <Stack spacing={2} direction="column" divider={<Divider orientation="vertical" flexItem />}>
-              <Subnet netuid={netuid} >
-                {neurons?.map((row, i) => {
-                  return (
-                    <StakeRow refreshMeta={refreshMeta} expanded={expanded} onChange={() => handleChange(row['address'])} unit={unit} key={`row-${row.address}`} row={row} columns={columns} />
-                  )
-                })}
-                {!!!neurons.length && <Typography variant="body2" className={classes.no_neurons_error}>No Neurons Registered to this Coldkey</Typography>}
-              </Subnet>
-            </Stack>
-          })}
-          {!!!Object.keys(stakeData).length && <Typography variant="body2" className={classes.no_neurons_error}>No Subnets</Typography>}
-        </ErrorBoundary>
-        <ErrorBoundary>
           {!!delegateInfo.length && 
             <Stack direction="column" spacing={1} alignItems="center" marginTop="2em" >
               
               <Typography variant="h2" style={{
                     fontWeight: 'bold',
                   }} >
-                    Delegates
+                    Delegate
               </Typography>
               <List style={{
                 minHeight: "400px",

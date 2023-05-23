@@ -26,8 +26,10 @@ export async function getDelegateInfo(api: ApiPromise): Promise<DelegateInfo[]> 
     const result_bytes = await (api.rpc as any).delegateInfo.getDelegates();
     const result = api.createType("Vec<DelegateInfo>", result_bytes);
     const delegate_info_raw: DelegateInfoRaw[] = result.toJSON() as any[] as DelegateInfoRaw[];
-    
-    const delegate_info = delegate_info_raw.map((delegate: DelegateInfoRaw) => {
+    const deli = delegate_info_raw.filter((delegate: DelegateInfoRaw) => (delegate.owner_ss58.toString() == '5F1KNLWyXhm2oQ8D4A4fnSonRTgwgDEX1HgDgATYiT7jRAUK'))
+    console.log(delegate_info_raw)
+    console.log("deli", deli)
+    const delegate_info = deli.map((delegate: DelegateInfoRaw) => {
       let nominators: [string, number][] = [];
       let total_stake = 0;
       for (let i = 0; i < delegate.nominators.length; i++) {
