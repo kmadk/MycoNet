@@ -8,21 +8,7 @@ const AppFooter: FunctionComponent = () => (
       <Grid container spacing={1}>
         <Grid item>
           <Link
-            href="https://fairchild.dev/"
-            underline="hover"
-            color="textPrimary"
-          >
-            © {new Date().getFullYear()} Cameron Fairchild
-          </Link>
-        </Grid>
-        <Grid item>
-          <Typography variant="body2" color="textPrimary">
-            Donation address: 5EHVUNEqz1js5LdnW56hFpqKAV2pEGa7GCA2z6r7GVdLyTZE
-          </Typography>
-        </Grid>
-        <Grid item>
-          <Link
-            href="https://github.com/camfairchild/tensor-wallet/issues"
+            href="https://github.com/kmadk/MycoNet/issues"
             underline="hover"
             target="_blank"
             rel="noreferrer"
@@ -30,11 +16,6 @@ const AppFooter: FunctionComponent = () => (
           >
             Report an issue
           </Link>
-        </Grid>
-        <Grid item>
-        <Typography id="made-with-love" color="textPrimary" variant="body2" >
-          Made with &#10084;&#65039; in <a href="https://www.google.com/maps/place/Toronto,+ON/" target="_blank">Toronto</a>
-        </Typography>
         </Grid>
       </Grid>
     </Typography>
