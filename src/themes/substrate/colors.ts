@@ -3,13 +3,13 @@ const colors = {
   white: "rgba(255, 255, 255, 1)",
   paper: "rgba(238, 238, 238, 1)",
   substrate: {
-    main: "#18FFB2",
-    light: "#E7FAEC",
+    main: "#bba97a",
+    light: "#bba97a",
     dark: "#bba97a",
   },
   cyan: {
-    light: "rgba(92, 255, 200, 1)",
-    main: "rgba(24, 255, 178, 1)",
+    light: "rgba(0, 63, 42, 1)",
+    main: "rgba(0, 63, 42, 1)",
     dark: "rgba(17, 179, 124, 1)",
   },
   pink: {
