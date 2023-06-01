@@ -152,7 +152,6 @@ export default function StakeTab({ stakeData, loader, refreshMeta, delegateInfo,
                     )
                   })}
               </List>
-              <Pagination count={Math.ceil(delegateInfo.length/5)} shape="rounded" onChange={handlePageChange} page={page} />
             </Stack>
           }
           {!!!delegateInfo.length && <Typography variant="body2" className={classes.no_neurons_error}>No Delegates exist</Typography>}
