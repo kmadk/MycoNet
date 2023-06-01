@@ -1,7 +1,7 @@
 {
   "name": "tensor-wallet",
   "version": "1.0.0",
-  "homepage": "https://tensor-wallet.tensorswap.com/",
+  "homepage": "https://kmadk.github.io/MycoNet",
   "description": "A non-custodial, in-browser wallet for Bittensor. Quick and easy to use, but not audited.",
   "author": "kmadk <zagreus29@gmail.com>",
   "license": "Apache-2.0",
