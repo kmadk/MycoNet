@@ -5,7 +5,7 @@ const colors = {
   substrate: {
     main: "#18FFB2",
     light: "#E7FAEC",
-    dark: "#16DB9A",
+    dark: "#bba97a",
   },
   cyan: {
     light: "rgba(92, 255, 200, 1)",
