@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "homepage": "https://tensor-wallet.tensorswap.com/",
   "description": "A non-custodial, in-browser wallet for Bittensor. Quick and easy to use, but not audited.",
-  "author": "Cameron Fairchild <cameron@fairchild.dev>",
+  "author": "kmadk <zagreus29@gmail.com>",
   "license": "Apache-2.0",
   "scripts": {
     "prebuild": "yarn clean",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/camfairchild/tensor-wallet.git"
+    "url": "https://github.com/kmadk/MycoNet.git"
   },
   "dependencies": {
     "@emotion/react": "^11.10.0",
