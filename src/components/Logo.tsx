@@ -24,7 +24,7 @@ const Logo: FunctionComponent<Props> = ({ theme, onClick }: Props) => {
     <Button className={classes.root} onClick={onClick} title="Toggle Dark Theme">
       <div className={classes.inner}>
         <img
-          alt="Tensor Wallet Logo"
+          alt="MycoNet Logo"
           src={theme ? "./assets/images/logo_dark.svg" :
             "./assets/images/logo.png"
           } 
