@@ -31,8 +31,8 @@ const useStyles = makeStyles((theme) => ({
 const ThemeToggleProvider = ({ children }: { children: React.ReactNode }) => {
   const classes = useStyles()
   const [localTheme, setLocalTheme] = useLocalStorage("theme")
-  const [theme, setTheme] = useState(localTheme === "false" ? false : true)
-  const appliedTheme = createTheme(theme ? SubstrateLight : SubstrateDark)
+  const [theme, setTheme] = useState(localTheme === "true" ? true : false)
+  const appliedTheme = createTheme(theme ? SubstrateDark : SubstrateLight)
   const appliedThemeNew = createThemeNew(theme ? SubstrateLightNew : SubstrateDarkNew )
 
   const selectTheme = (selected: boolean) => {
